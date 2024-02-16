@@ -87,7 +87,7 @@ MODULE_PARM_DESC(hystart_ack_delta, "spacing between ack's indicating train (mse
 #define FOUND_SSTHRESH_HYSTART	1
 #define FOUND_SSTHRESH_SEARCH 	2
 
-static int search_enable_mode __read_mostly = 1;	/* 0: disable, 1: set ssthresh when exit, 2: set snd_clamp and ssthresh when exit */
+static int search_enable_mode __read_mostly = 1;	/* 0: disable, 1: set ssthresh when exit */
 static int max_rtt_factor __read_mostly = 350;
 static int search_exit_thresh __read_mostly = 25;
 static int search_double_cross_exit __read_mostly = 1;
